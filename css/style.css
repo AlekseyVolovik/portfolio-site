@@ -448,7 +448,7 @@ img{
 
 .about{
     background-color: #000;
-    padding: 95px 0;
+    padding: 100px 0;
 }
 
 .info{
@@ -530,7 +530,7 @@ img{
 
 .tools-image{
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 
 /*=====Footer=====*/
