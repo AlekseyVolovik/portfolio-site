@@ -2,8 +2,7 @@
 
 $(window).on("load", function(){
     $("#intro").vide({
-        mp4: "./video/Walking",
-        h264: "./video/Walking"
+        mp4: "./video/Walking"
     },
     {
         bgColor: "#1B1811"
