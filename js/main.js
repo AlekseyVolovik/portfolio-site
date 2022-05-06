@@ -1,7 +1,11 @@
 /* Vide video */
 
 $(window).on("load", function(){
-    $("#intro").vide("video/Walking", {
+    $("#intro").vide({
+        mp4: "./video/Walking",
+        h264: "./video/Walking"
+    },
+    {
         bgColor: "#1B1811"
     });
 });
