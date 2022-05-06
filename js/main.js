@@ -1,7 +1,7 @@
 /* Vide video */
 
 $(window).on("load", function(){
-     $("#intro").vide("./video/Walking to the mountain top", {
+    $("#intro").vide("video/Walking", {
         bgColor: "#1B1811"
     });
 });
