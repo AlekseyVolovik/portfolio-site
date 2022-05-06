@@ -1,13 +1,13 @@
 /* Vide video */
 
-$(window).on("load", function(){
+/*$(window).on("load", function(){
     $("#intro").vide({
         mp4: "./video/Walking"
     },
     {
         bgColor: "#1B1811"
     });
-});
+});*/
 
 /* Burger-menu */
 
