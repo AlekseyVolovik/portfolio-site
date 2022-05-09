@@ -1,3 +1,5 @@
+" use strict";
+
 /* Vide video */
 
 /*$(window).on("load", function(){
@@ -21,7 +23,7 @@ var header = $("#header");
 var introH = $("#intro").innerHeight();
 var headerH = header.innerHeight();
 var portfolioH = $("#portfolio").innerHeight();
-var sumH = introH + portfolioH + headerH
+var sumH = introH + portfolioH + headerH;
 var scrollOffset = 0;
 
 checkScroll(scrollOffset);
@@ -95,7 +97,7 @@ $(".project__slider").slick({
     arrows: true,
     dots: true,
     adaptiveHeight: true
-})
+});
 
 
 
