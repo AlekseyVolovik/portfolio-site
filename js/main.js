@@ -30,7 +30,7 @@ checkScroll(scrollOffset);
 
 $(window).on("scroll", function() {
     scrollOffset = $(this).scrollTop();
-     checkScroll(scrollOffset);
+    checkScroll(scrollOffset);
 });
 
 function checkScroll (scrollOffset) {
