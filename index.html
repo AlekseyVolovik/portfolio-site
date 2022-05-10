@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
@@ -53,13 +54,13 @@
             <div class="container">
                 <div class="portfolio__inner">
                     <div class="portfolio__content">
-                        <h1 class="portfolio__title">Hello</h1>
-                        <p class="portfolio__text">This is my portfolio-page</p>
+                        <h1 class="portfolio__title" data-aos="zoom-out-right">Hello</h1>
+                        <p class="portfolio__text" data-aos="zoom-out-right">This is my portfolio-page</p>
                         
-                        <a class="button" href="#" data-modal="#modal__resume">See my resume</a>
+                        <a class="button" href="#" data-modal="#modal__resume" data-aos="zoom-out-right">See my resume</a>
                     </div>
                     <div class="portfolio__photo">
-                        <img src="https://via.placeholder.com/500x500/333.png" alt="My photo" >
+                        <img src="https://via.placeholder.com/500x500/333.png" alt="My photo" data-aos="zoom-out-left">
                     </div>
                 </div>
             </div>
@@ -67,12 +68,12 @@
 
         <section class="works" id="works">
             <div class="container">
-                <div class="works__header">
+                <div class="works__header" data-aos="zoom-out-down">
                     <h3 class="works__header-suptitle">What I do</h3>
                     <h2 class="works__header-title">some of my works</h2>
                 </div>
                 <div class="works__cards">
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-right">
                         <div class="card__content">
                             <a href="#" class="card-link">
                                 <img class="card__image"  src="./images/page.jpg" alt="#">
@@ -82,7 +83,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-left">
                         <div class="card__content">
                             <a href="#" class="card-link">
                                 <img class="card__image"  src="./images/page2.jpg" alt="#">
@@ -92,7 +93,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-right">
                         <div class="card__content">
                             <a href="./intro-page-mntn.html" class="card-link" target="_blank">
                                 <img class="card__image"  src="./images/welcome-mntn.jpg" alt="Mountains">
@@ -102,7 +103,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-in-left">
                         <div class="card__content">
                             <a href="./intro-page-mogo.html" class="card-link" target="_blank">
                                 <img class="card__image"  src="./images/welcome-mogo.jpg" alt="Sait-mogo">
@@ -118,12 +119,12 @@
 
         <section class="about" id="about">
             <div class="container">
-                <div class="works__header">
+                <div class="works__header" data-aos="zoom-out-down">
                     <h3 class="works__header-suptitle">About me</h3>
                     <h2 class="works__header-title">Who am I</h2>
                 </div>
                 <div class="info">
-                    <div class="info__item1">
+                    <div class="info__item1" data-aos="zoom-in-right">
                         <h2>About</h2>
                         <div class="about__text">
                             <p >I'm Aleksey, a Front-End Developer.<br>I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p> 
@@ -132,7 +133,7 @@
                         </div>
                         
                     </div>
-                    <div class="info__item2">
+                    <div class="info__item2" data-aos="zoom-in-left">
                         <h2>Skills</h2>
                         <div class="tehnologies">
                             <div class="tehno__img">
@@ -161,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="info__item3">
+                    <div class="info__item3" data-aos="zoom-in-left">
                         <h2>Tools:</h2>
                         <div class="tools-image">
                             <div class="tehno__img">
@@ -189,13 +190,13 @@
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__text-cooperation">
+                <div class="footer__text-cooperation" data-aos="fade-down">
                     I'm always open to discussing product create website or any ideas of cooperation.
                 </div>
                 <div class="footer-links">
-                    <a class="link" href="#" target="_blank">LinkedIn</a>
-                    <a class="link" href="https://t.me/AlekseyVolovik" target="_blank">Telegram</a>
-                    <a class="link" href="https://github.com/AlekseyVolovik" target="_blank">GitHub</a>
+                    <a class="link" href="#" target="_blank" data-aos="fade-down">LinkedIn</a>
+                    <a class="link" href="https://t.me/AlekseyVolovik" target="_blank" data-aos="fade-down">Telegram</a>
+                    <a class="link" href="https://github.com/AlekseyVolovik" target="_blank" data-aos="fade-down">GitHub</a>
                 </div>
                 <div class="footer__copyright">2022 Aleksey Volovik</div>
             </div>
@@ -237,7 +238,10 @@
 
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./libs/jQuery/jquery-3.6.0.min.js"></script>
     <!--<script src="./libs/Vide/jquery.vide.min.js"></script>-->
     <script src="./js/slick.min.js"></script>

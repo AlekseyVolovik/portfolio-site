@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Sait Mountains</title>
 </head>
 <body>
     <div class="page">
         <section class="project__site">
             <div class="container">
-                <h1 class="project-title">Mountains - adaptive and responsive website design</h1>
+                <h1 class="project-title" data-aos="fade-left">Mountains - adaptive and responsive website design</h1>
                 <div class="project__slider">
                     <div class="slider__item">
                         <img src="./images/image-mountains/01.jpg" alt="site">
@@ -30,12 +31,12 @@
                     </div>
                 </div>
                 <div class="project-description">
-                    <h2 class="project-description-title">Briefly about the project:</h2>
-                    <p>The goal for the website design to keep the design clean, minimal and modern. Vivid photos were then added to bring the design to life. Having a responsive layout ensures that the website will resize to fit any screen or mobile device.</p>
-                    <ul class="project-technologies">Technologies I got involved with while working on this project:
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+                    <h2 class="project-description-title" data-aos="fade-left">Briefly about the project:</h2>
+                    <p data-aos="fade-right">The goal for the website design to keep the design clean, minimal and modern. Vivid photos were then added to bring the design to life. Having a responsive layout ensures that the website will resize to fit any screen or mobile device.</p>
+                    <ul class="project-technologies" data-aos="fade-left">Technologies I got involved with while working on this project:
+                        <li data-aos="fade-right">HTML</li>
+                        <li data-aos="fade-left">CSS</li>
+                        <li data-aos="fade-right">JavaScript</li>
                     </ul>
                 </div>
                  <a class="button btn-center" href="https://alekseyvolovik.github.io/mountains-site/" target="_blank">View site</a>
@@ -45,13 +46,13 @@
         <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
-                    <div class="footer__text-cooperation">
+                    <div class="footer__text-cooperation" data-aos="zoom-in-down">
                         I'm always open to discussing product create website or any ideas of cooperation.
                     </div>
                     <div class="footer-links">
-                        <a class="link" href="#" target="_blank">LinkedIn</a>
-                        <a class="link" href="https://t.me/AlekseyVolovik" target="_blank">Telegram</a>
-                        <a class="link" href="https://github.com/AlekseyVolovik" target="_blank">GitHub</a>
+                        <a class="link" href="#" target="_blank" data-aos="zoom-in-down">LinkedIn</a>
+                        <a class="link" href="https://t.me/AlekseyVolovik" target="_blank" data-aos="zoom-in-down">Telegram</a>
+                        <a class="link" href="https://github.com/AlekseyVolovik" target="_blank" data-aos="zoom-in-down">GitHub</a>
                     </div>
                     <div class="footer__copyright">2022 Aleksey Volovik</div>
                 </div>
@@ -75,6 +76,10 @@
         </footer>
     </div>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./libs/jQuery/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/main.js"></script>
