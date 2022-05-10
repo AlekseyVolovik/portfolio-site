@@ -327,8 +327,12 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 80px 0;
-    box-shadow: 0 0 0 #fff, 0 0 15px #fff;
+    box-shadow: 0 0 0 #fff, 0 0 15px #fff; 
     position: relative;
+}
+
+.vanta-canvas{
+    box-shadow: 0 0 0 #fff, 0 0 15px #fff;
 }
 
 .works__header {
@@ -549,7 +553,6 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     padding: 70px 0;
-    box-shadow: 0 0 15px #fff;
 }
 
 .footer__inner{
