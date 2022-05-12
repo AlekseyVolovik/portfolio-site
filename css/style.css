@@ -621,7 +621,6 @@ img{
     position: fixed;
     display: flex;
     flex-direction: column;
-    right: 0;
     top: 40%;
     z-index: 1000;
 }
@@ -639,7 +638,7 @@ img{
 }
 
 .social__link:hover{
-    transform: translateX(-8px);
+    transform: translateX(8px);
 }
 
 /*=====Modal=====*/
