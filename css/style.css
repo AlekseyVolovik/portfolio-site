@@ -18,6 +18,8 @@ body.no-scroll {
     overflow: hidden;
 }
 
+
+
 p{
     margin: 0;
 }
@@ -45,25 +47,55 @@ img{
 	margin: 0 auto; 
 }
 
-/*=====Intro=====*/
+.none{
+    display: none;
+}
 
+/*=====Intro=====*/
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 15px #fff;
+}
+
+.intro::after{
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.intro__video{
+    position: relative;
+    padding-bottom: 56.25%;
+    z-index: 1;
+}
 
 #myVideo{
     position: absolute;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
 }
 
-.intro{
-    overflow: hidden;
-
+.intro__content{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    box-shadow: 0 0 15px #fff;
 }
 
 .intro__title{
@@ -81,13 +113,13 @@ img{
     line-height: 1.5;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .intro__text{
-    position: absolute;
-    right: 10px;
-    bottom: 100px;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
 }
 
 .intro__quote{
@@ -109,6 +141,7 @@ img{
     height: 50px;
     position: absolute;
     bottom: 20px;
+    left: 50%;
 }
 
 /*=====Header=====*/
@@ -239,9 +272,6 @@ img{
 .portfolio{
     background-color: black;
     padding: 70px 0;
-    /*background-image: url("../images/cover-portfolio.png");*/
-    background-repeat: no-repeat;
-    background-position: left bottom;
 }
 
 .portfolio__inner{
@@ -621,6 +651,7 @@ img{
     position: fixed;
     display: flex;
     flex-direction: column;
+    right: 0;
     top: 40%;
     z-index: 1000;
 }
@@ -638,7 +669,7 @@ img{
 }
 
 .social__link:hover{
-    transform: translateX(8px);
+    transform: translateX(-8px);
 }
 
 /*=====Modal=====*/
