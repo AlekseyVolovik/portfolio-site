@@ -53,7 +53,6 @@ img{
     max-height: 100vh;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 15px #fff;
 }
 
 .intro::after{
@@ -93,6 +92,8 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    
 }
 
 .intro__title{
@@ -147,7 +148,7 @@ img{
 
 .header{
     background-color: black;
-    
+    position: relative;
 }
 .header.fixed{
     background-color: #000000;
@@ -156,6 +157,7 @@ img{
     top: 0;
     right: 0;
     left: 0;
+    transform: translate3d(0, 0, 0);
     box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -184,7 +186,9 @@ img{
     transition: all 0.2s linear;
 }
 
-
+.nav.active{
+    display: block;
+}
 
 .nav__link:hover{
     color: #caa489;  
@@ -196,7 +200,7 @@ img{
     width: 0;
     background-color: #caa489;
     position: absolute;
-    bottom: -5px;
+    bottom: -4px;
     left: 0;
     z-index: 1;
     transition: width .2s linear; 

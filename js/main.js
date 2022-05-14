@@ -1,20 +1,16 @@
 " use strict";
 
-/* Vide video */
-
-/*$(window).on("load", function(){
-    $("#intro").vide({
-        mp4: "./video/Walking"
-    },
-    {
-        bgColor: "#1B1811"
-    });
-});*/
-
 /* Burger-menu */
 
 $(".menu-icon-wrapper").on("click", function(){
     $(".menu-icon").toggleClass("menu-icon-active");
+});
+
+$("#menu-icon-wrapper").on("click", function(event){
+    event.preventDefault();
+
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("active");
 });
 
 /* Fixed Header */

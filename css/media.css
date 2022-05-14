@@ -1,3 +1,22 @@
-@media (max-width: 1200px) {
-    
+@media (max-width: 768px) {
+    .menu-icon-wrapper{
+        display: flex;
+    }
+
+    .nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: black;
+        width: 100%;
+        z-index: 100;
+        height: 200px;
+    }
+
+    .nav__link{
+        display: block;
+        padding: 15px 20px;
+    }
+
 }
