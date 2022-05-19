@@ -19,4 +19,20 @@
         padding: 15px 20px;
     }
 
+    .info__item1{
+        grid-column:1;
+    }
+
+    .info__item2{
+        grid-column:1;
+    }
+
+    .info__item3{
+        grid-column:1;
+    }
+
+    .widget__social{
+        display: none;
+    }
+
 }
