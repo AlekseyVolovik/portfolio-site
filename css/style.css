@@ -272,7 +272,12 @@ img{
 
 .portfolio{
     background-color: black;
-    padding: 70px 0;
+    padding-top: 10px;
+    position: relative;
+}
+
+.portfolio__photo img{
+    display: block;
 }
 
 .portfolio__inner{
