@@ -78,7 +78,7 @@ img{
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -92,8 +92,6 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    
 }
 
 .intro__title{
@@ -278,6 +276,7 @@ img{
 
 .portfolio__photo img{
     display: block;
+    max-width: 100%;
 }
 
 .portfolio__inner{
@@ -450,11 +449,12 @@ img{
     width: 535px;
     height: 345px;
     z-index: 10;
+    max-width: 100%;
 }
 
 .card__image {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
     transition: opacity .2s linear;
 }
@@ -504,6 +504,7 @@ img{
     display: grid;
     grid-gap: 10px;
     grid-auto-rows: minmax(50px, auto);
+    padding: 0 40px;
 }
 
 .info__item1{
