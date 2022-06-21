@@ -68,17 +68,27 @@
         visibility: hidden;
     }
 
-    .intro__text{
+    .portfolio__title{
+        font-size: 90px;
+    }
+
+    .intro{
         display: none;
     }
 
-    .intro__title{
-        font-size: 35px;
+    
+    .info {
+        padding: 0;
     }
 
-    .intro__arrow{
-        display: none;
+    .about__text{
+        font-size: 15px;
     }
+
+    .link {
+        margin-right: 15px;
+    }
+
 }
 
 @media (max-width: 320px) {
@@ -87,11 +97,11 @@
         height: 220px;
     }
 
-    .link{
-        margin-right: 15px;
-    }
-
     .portfolio__title{
         font-size: 90px;
+    }
+
+    .intro{
+        display: none;
     }
 }
